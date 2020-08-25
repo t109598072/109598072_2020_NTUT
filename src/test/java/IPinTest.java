@@ -1,60 +1,20 @@
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
-public class GateANDTest
+public class IPinTest
 {
     @Test
-    public void testAddInputPin()
+    public void testSetInputValue()
     {
         //Arrange
-        Device uat = new GateAND();
-        Device deviceBeingAdded = new Device();
+        IPin uat = new IPin();
 
         //Act
-        uat.addInputPin(deviceBeingAdded);
+        uat.setInputValue(1);
 
         //Assert
-        assertEquals(uat.getInputCount(), 1);
-        assertTrue(deviceBeingAdded.isConnectToAnotherDevice);
+        assertEquals(uat.getOutput(), "1");
     }
-
-    @Test
-    public void testGetOutputTrue()
-    {
-        //Arrange
-        Device uat = new GateAND();
-        IPin inputPin1 = new IPin();
-        inputPin1.setInputValue(1);
-        IPin inputPin2 = new IPin();
-        inputPin2.setInputValue(1);
-        uat.addInputPin(inputPin1);
-        uat.addInputPin(inputPin2);
-
-        //Act
-        String result = uat.getOutput();
-
-        //Assert
-        assertEquals("1", result);
-    }
-
-    @Test
-    public void testGetOutputFalse()
-    {
-        //Arrange
-        GateAND uat = new GateAND();
-        IPin inputPin1 = new IPin();
-        inputPin1.setInputValue(0);
-        IPin inputPin2 = new IPin();
-        inputPin2.setInputValue(1);
-        uat.addInputPin(inputPin1);
-        uat.addInputPin(inputPin2);
-
-        //Act
-        String result = uat.getOutput();
-
-        //Assert
-        assertEquals("0", result);
-    }
-
 }

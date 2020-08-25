@@ -1,20 +1,21 @@
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
-public class IPinTest
+public class OPinTest
 {
     @Test
-    public void testSetInputValue()
+    public void testGetOutput()
     {
         //Arrange
-        IPin uat = new IPin();
+        IPin deviceBeingAdded = new IPin();
+        deviceBeingAdded.setInputValue(1);
+        OPin uat = new OPin(deviceBeingAdded);
 
         //Act
-        uat.setInputValue(1);
+        String result = uat.getOutput();
 
         //Assert
-        assertEquals(uat.getOutput(), 1);
+        assertEquals(result, "1");
     }
 }
