@@ -45,7 +45,7 @@ public class GateNOTTest
         //Arrange
         Device uat = new GateNOT();
         IPin inputPin = new IPin();
-        inputPin.setInputValue(1);
+        inputPin.setInput(true);
         uat.addInputPin(inputPin);
 
         //Act
@@ -61,7 +61,7 @@ public class GateNOTTest
         //Arrange
         Device uat = new GateNOT();
         IPin inputPin = new IPin();
-        inputPin.setInputValue(0);
+        inputPin.setInput(false);
         uat.addInputPin(inputPin);
 
         //Act

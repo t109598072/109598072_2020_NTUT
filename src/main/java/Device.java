@@ -1,7 +1,11 @@
 import java.util.Vector;
 
 public class Device {
-    protected Vector<Device> iPins = new Vector<Device>();
+    protected Vector<Device> iPins;
+
+    public Device(){
+        this.iPins = new Vector<>();
+    }
 
     public boolean isConnectToAnotherDevice = false;
 
@@ -15,5 +19,9 @@ public class Device {
 
     public int getInputCount() {
         return iPins.size();
+    }
+
+    public void setInput(boolean value){
+        throw new RuntimeException("this is base class");
     }
 }

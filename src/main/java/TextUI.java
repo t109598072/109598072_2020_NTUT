@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Vector;
 
 public class TextUI {
     enum Commands
@@ -40,7 +41,8 @@ public class TextUI {
                 break;
             }
             case SIMULATTION:{
-                String result = this.logicSimulator.setInputValue() ? this.logicSimulator.getSimulationResult() : "";
+                Vector<Boolean> inputs = this.logicSimulator.getInputs();
+                String result = inputs != null ? this.logicSimulator.getSimulationResult(inputs) : "";
                 System.out.println(result);
                 break;
             }

@@ -12,7 +12,7 @@ public class IPinTest
         IPin uat = new IPin();
 
         //Act
-        uat.setInputValue(1);
+        uat.setInput(true);
 
         //Assert
         assertEquals(uat.getOutput(), "1");

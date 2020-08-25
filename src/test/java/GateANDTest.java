@@ -25,9 +25,9 @@ public class GateANDTest
         //Arrange
         Device uat = new GateAND();
         IPin inputPin1 = new IPin();
-        inputPin1.setInputValue(1);
+        inputPin1.setInput(true);
         IPin inputPin2 = new IPin();
-        inputPin2.setInputValue(1);
+        inputPin2.setInput(true);
         uat.addInputPin(inputPin1);
         uat.addInputPin(inputPin2);
 
@@ -44,9 +44,9 @@ public class GateANDTest
         //Arrange
         GateAND uat = new GateAND();
         IPin inputPin1 = new IPin();
-        inputPin1.setInputValue(0);
+        inputPin1.setInput(false);
         IPin inputPin2 = new IPin();
-        inputPin2.setInputValue(1);
+        inputPin2.setInput(true);
         uat.addInputPin(inputPin1);
         uat.addInputPin(inputPin2);
 

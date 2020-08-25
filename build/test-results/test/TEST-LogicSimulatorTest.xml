@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LogicSimulatorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-25T02:01:12" hostname="MSI" time="0.022">
-  <properties/>
-  <testcase name="testLoadSucess" classname="LogicSimulatorTest" time="0.022"/>
-  <system-out><![CDATA[Circuit: 3 input pins, 1 output pins and 3 gates
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

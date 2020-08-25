@@ -9,7 +9,7 @@ public class OPinTest
     {
         //Arrange
         IPin deviceBeingAdded = new IPin();
-        deviceBeingAdded.setInputValue(1);
+        deviceBeingAdded.setInput(true);
         OPin uat = new OPin(deviceBeingAdded);
 
         //Act

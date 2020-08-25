@@ -1,12 +1,13 @@
 public class IPin extends Device {
-    private int input;
+    private boolean input;
 
-    public void setInputValue(int value) {
+    @Override
+    public void setInput(boolean value){
         this.input = value;
     }
 
     @Override
     public String getOutput(){
-        return input == 1 ? "1" : "0";
+        return input ? "1" : "0";
     }
 }

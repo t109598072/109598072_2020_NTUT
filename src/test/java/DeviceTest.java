@@ -4,6 +4,15 @@ import static org.junit.Assert.*;
 public class DeviceTest
 {
     @Test
+    public void testDevicePolymorphism()
+    {
+        Device device = new IPin();
+        assertEquals(IPin.class.getName(), device.getClass().getName());
+
+        /* implement OPin, GateNOT, GateAND, GateOR test */
+    }
+
+    @Test
     public void testAppInputPin()
     {
         //Arrange

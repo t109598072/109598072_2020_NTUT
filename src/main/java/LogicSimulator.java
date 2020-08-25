@@ -1,3 +1,5 @@
+import com.sun.org.apache.xpath.internal.operations.Bool;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -16,11 +18,14 @@ public class LogicSimulator {
 
 
 
-    private boolean isFileLoaded = false;
+    public boolean isFileLoaded = false;
 
-    public String getSimulationResult(){
+    public String getSimulationResult(Vector<Boolean> input){
         if (!this.isFileLoaded)
-        return "Please load an lcf file, before using this operation.";
+            return "Please load an lcf file, before using this operation.";
+        for (int i = 0; i < this.iPins.size(); i ++){
+            this.iPins.get(i).setInput(input.get(i));
+        }
         String result = (this.getFormText());
         int num;
         for (num = 0; num < this.iPins.size(); num++)
@@ -45,7 +50,7 @@ public class LogicSimulator {
                 for (int j=n-1; j>=0; j--) {
                     int input = (i/(int) Math.pow(2, j))%2;
                     IPin iPin = (IPin) this.iPins.get(Math.abs(j-2));
-                    iPin.setInputValue(input);
+                    iPin.setInput(input == 1 ? true : false);
                     result += input + " ";
                 }
                 result += "| ";
@@ -200,11 +205,12 @@ public class LogicSimulator {
         }
     }
 
-    public boolean setInputValue(){
+    public Vector<Boolean> getInputs(){
         if(this.isFileLoaded){
             String input = new String();
             int count = 0;
             Scanner scanner = new Scanner(System.in);
+            Vector<Boolean> inputs = new Vector<>();
             while(count < this.iPins.size())
             {
                 System.out.print("Please key in the value of input pin " + (count + 1) + ": ");
@@ -212,19 +218,19 @@ public class LogicSimulator {
                 if (this.isDigit(input) && (Integer.parseInt(input) == 0 || Integer.parseInt(input) == 1))
                 {
                     int value = Integer.parseInt(input);
-                    IPin ipin = (IPin) this.iPins.get(count);
-                    ipin.setInputValue(value);
+                    inputs.add(value == 1 ? true : false);
                     count++;
                 }
 			else
                 {
                     System.out.println("The value of input pin must be 0/1");
+                    return null;
                 }
             }
-            return true;
+            return inputs;
         }
         System.out.print("Please load an lcf file, before using this operation.");
-        return false;
+        return null;
     }
 
     private boolean isDigit(String str) {

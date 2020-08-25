@@ -26,9 +26,9 @@ public class GateORTest
         //Arrange
         Device uat = new GateOR();
         IPin inputPin1 = new IPin();
-        inputPin1.setInputValue(1);
+        inputPin1.setInput(true);
         IPin inputPin2 = new IPin();
-        inputPin2.setInputValue(0);
+        inputPin2.setInput(false);
         uat.addInputPin(inputPin1);
         uat.addInputPin(inputPin2);
 
@@ -45,9 +45,9 @@ public class GateORTest
         //Arrange
         Device uat = new GateOR();
         IPin inputPin1 = new IPin();
-        inputPin1.setInputValue(0);
+        inputPin1.setInput(false);
         IPin inputPin2 = new IPin();
-        inputPin2.setInputValue(0);
+        inputPin2.setInput(false);
         uat.addInputPin(inputPin1);
         uat.addInputPin(inputPin2);
 
