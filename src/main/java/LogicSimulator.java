@@ -7,15 +7,13 @@ import java.util.Vector;
 
 
 public class LogicSimulator {
+    //Gate should start with 1, DUMMY is useless
     enum LogicGate{
         DUMMY, AND, OR, NOT
     }
     private Vector<Device> iPins = new Vector<Device>();
     private Vector<Device> oPins = new Vector<Device>();
     private Vector<Device> circuit = new Vector<Device>();
-
-
-
     public boolean isFileLoaded = false;
 
     public String getSimulationResult(Vector<Boolean> input){
@@ -153,13 +151,13 @@ public class LogicSimulator {
         for (int i = 0; i < gateCount; i++)
         {
             line = reader.readLine();
-            createGate(line.charAt(0) - '0');
+            createGates(line.charAt(0) - '0');
             lines.add(line);
         }
         //create the connecttion between gates
         for (int i = 0; i < gateCount; i++)
         {
-            this.createConnectionBetweenGates(lines.get(i), i);
+            this.setupConnectionBetweenGates(lines.get(i), i);
         }
 
         //Check the device which doesn't connect to any device & create OPins
@@ -174,7 +172,7 @@ public class LogicSimulator {
 
     }
 
-    private void createConnectionBetweenGates(String line, int gateNum) {
+    private void setupConnectionBetweenGates(String line, int gateNum) {
         String[] lineSplited = line.split("\\s+");
         //avoid the first(gateType) and last(endSign) element
         for (int i = 1; i < lineSplited.length - 1; i ++){
@@ -192,7 +190,7 @@ public class LogicSimulator {
         }
     }
 
-    private void createGate(int gateType) {
+    private void createGates(int gateType) {
         LogicGate gate = LogicGate.values()[gateType];
         switch (gate){
             case AND:{

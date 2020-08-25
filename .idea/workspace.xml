@@ -29,26 +29,30 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/LogicSimulator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/LogicSimulator$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/LogicSimulator$LogicGate.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/LogicSimulator$LogicGate.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/LogicSimulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/LogicSimulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/TextUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/TextUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/DeviceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/DeviceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/LogicSimulatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/LogicSimulatorTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/DeviceTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/DeviceTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/GateANDTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/GateANDTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/GateNOTTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/GateNOTTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/GateORTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/GateORTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/IPinTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/IPinTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/LogicSimulatorTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/LogicSimulatorTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/OPinTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/OPinTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-DeviceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-DeviceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-GateANDTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-GateANDTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-GateNOTTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-GateNOTTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-GateORTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-GateORTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-IPinTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-IPinTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-LogicSimulatorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-LogicSimulatorTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-OPinTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-OPinTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LogicSimulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicSimulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TextUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TextUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DeviceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DeviceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LogicSimulatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LogicSimulatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +122,7 @@
       <recent name="GateNOT" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.Tests in '109OrientationCourse_Object-Oriented_Programming.test'">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="109OrientationCourse_Object-Oriented_Programming.main" />
@@ -283,58 +287,58 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="439" height="466" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1598277168286" />
-    <state width="1877" height="290" key="GridCell.Tab.0.bottom" timestamp="1598326906794">
+    <state width="1877" height="168" key="GridCell.Tab.0.bottom" timestamp="1598327484487">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597066909270" />
     <state width="1493" height="170" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597301956505" />
     <state width="1877" height="170" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1597306904928" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597046694324" />
-    <state width="1877" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598326906794" />
+    <state width="1877" height="168" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598327484487" />
     <state width="2517" height="171" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1597134918341" />
-    <state width="1877" height="290" key="GridCell.Tab.0.center" timestamp="1598326906794">
+    <state width="1877" height="168" key="GridCell.Tab.0.center" timestamp="1598327484487">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597066909270" />
     <state width="1493" height="170" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597301956505" />
     <state width="1877" height="170" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1597306904928" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597046694324" />
-    <state width="1877" height="290" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598326906794" />
+    <state width="1877" height="168" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598327484487" />
     <state width="2517" height="171" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1597134918340" />
-    <state width="1877" height="290" key="GridCell.Tab.0.left" timestamp="1598326906794">
+    <state width="1877" height="168" key="GridCell.Tab.0.left" timestamp="1598327484487">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597066909270" />
     <state width="1493" height="170" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597301956505" />
     <state width="1877" height="170" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1597306904928" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597046694324" />
-    <state width="1877" height="290" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598326906794" />
+    <state width="1877" height="168" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598327484487" />
     <state width="2517" height="171" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1597134918340" />
-    <state width="1877" height="290" key="GridCell.Tab.0.right" timestamp="1598326906794">
+    <state width="1877" height="168" key="GridCell.Tab.0.right" timestamp="1598327484487">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597066909270" />
     <state width="1493" height="170" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597301956505" />
     <state width="1877" height="170" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1597306904928" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597046694324" />
-    <state width="1877" height="290" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598326906794" />
+    <state width="1877" height="168" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598327484487" />
     <state width="2517" height="171" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1597134918341" />
-    <state width="1877" height="290" key="GridCell.Tab.1.bottom" timestamp="1598326906794">
+    <state width="1877" height="290" key="GridCell.Tab.1.bottom" timestamp="1598327075837">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="290" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598326906794" />
-    <state width="1877" height="290" key="GridCell.Tab.1.center" timestamp="1598326906794">
+    <state width="1877" height="290" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598327075837" />
+    <state width="1877" height="290" key="GridCell.Tab.1.center" timestamp="1598327075837">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="290" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598326906794" />
-    <state width="1877" height="290" key="GridCell.Tab.1.left" timestamp="1598326906794">
+    <state width="1877" height="290" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598327075837" />
+    <state width="1877" height="290" key="GridCell.Tab.1.left" timestamp="1598327075837">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="290" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598326906794" />
-    <state width="1877" height="290" key="GridCell.Tab.1.right" timestamp="1598326906794">
+    <state width="1877" height="290" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598327075837" />
+    <state width="1877" height="290" key="GridCell.Tab.1.right" timestamp="1598327075837">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="290" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598326906794" />
+    <state width="1877" height="290" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598327075837" />
     <state x="463" y="167" key="SettingsEditor" timestamp="1598249514993">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -357,22 +361,11 @@
     <state x="623" y="227" width="672" height="685" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598321922672" />
     <state x="831" y="225" width="896" height="678" key="search.everywhere.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1597124045852" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/TextUI.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/109OrientationCourse_Object_Oriented_Programming$Tests_in__Model_.ic" NAME="Tests in 'Model' Coverage Results" MODIFIED="1597304315335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/109OrientationCourse_Object_Oriented_Programming$DeviceTest_testDevice.ic" NAME="DeviceTest.testDevice Coverage Results" MODIFIED="1598251532911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/109OrientationCourse_Object_Oriented_Programming$LogicSimulatorTest.ic" NAME="LogicSimulatorTest Coverage Results" MODIFIED="1597084665855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/109OrientationCourse_Object_Oriented_Programming$LogicSimulatorTest_testLoadSucess.ic" NAME="LogicSimulatorTest.testLoadSucess Coverage Results" MODIFIED="1598266521842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/109OrientationCourse_Object_Oriented_Programming$Tests_in__109OrientationCourse_Object_Oriented_Programming_test_.ic" NAME="Tests in '109OrientationCourse_Object-Oriented_Programming.test' Coverage Results" MODIFIED="1598326526559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/109OrientationCourse_Object_Oriented_Programming$Tests_in__109OrientationCourse_Object_Oriented_Programming_test_.ic" NAME="Tests in '109OrientationCourse_Object-Oriented_Programming.test' Coverage Results" MODIFIED="1598327484461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

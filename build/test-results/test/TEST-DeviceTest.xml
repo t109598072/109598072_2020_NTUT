@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DeviceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-08-25T03:35:29" hostname="MSI" time="0.005">
+<testsuite name="DeviceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-08-25T03:51:26" hostname="MSI" time="0.006">
   <properties/>
-  <testcase name="testDevicePolymorphism" classname="DeviceTest" time="0.002"/>
+  <testcase name="testDevicePolymorphism" classname="DeviceTest" time="0.003"/>
   <testcase name="testAddInputPin" classname="DeviceTest" time="0.0"/>
-  <testcase name="testIPinAndOPin" classname="DeviceTest" time="0.002"/>
+  <testcase name="testIPinAndOPin" classname="DeviceTest" time="0.001"/>
   <testcase name="testGetOutput" classname="DeviceTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
