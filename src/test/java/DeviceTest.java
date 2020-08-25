@@ -13,7 +13,22 @@ public class DeviceTest
     }
 
     @Test
-    public void testAppInputPin()
+    public void testIPinAndOPin()
+    {
+        // 0 = 0
+        IPin iPin = new IPin();
+        iPin.setInput(false);
+
+        OPin oPin = new OPin();
+        oPin.addInputPin(iPin);
+
+        assertEquals("0", oPin.getOutput());
+
+        /* implement 1 = 1 test */
+    }
+
+    @Test
+    public void testAddInputPin()
     {
         //Arrange
         Device  uat = new Device();

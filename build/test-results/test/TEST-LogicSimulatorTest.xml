@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LogicSimulatorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-08-25T03:35:29" hostname="MSI" time="0.02">
+  <properties/>
+  <testcase name="testLoadSucess" classname="LogicSimulatorTest" time="0.014"/>
+  <testcase name="testGetSimulationResult" classname="LogicSimulatorTest" time="0.002"/>
+  <testcase name="testGetTruthTable" classname="LogicSimulatorTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

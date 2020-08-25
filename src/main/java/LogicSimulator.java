@@ -1,5 +1,3 @@
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -26,7 +24,7 @@ public class LogicSimulator {
         for (int i = 0; i < this.iPins.size(); i ++){
             this.iPins.get(i).setInput(input.get(i));
         }
-        String result = (this.getFormText());
+        String result = "Simulation Result:\n" + (this.getFormText());
         int num;
         for (num = 0; num < this.iPins.size(); num++)
         {
@@ -35,15 +33,16 @@ public class LogicSimulator {
         result += "| ";
         for (num = 0; num < this.oPins.size(); num++)
         {
-            result += this.oPins.get(num).getOutput() + " ";
+            result += this.oPins.get(num).getOutput();
+            result += num == this.oPins.size() - 1 ? "" : " ";
         }
         result += "\n";
         return result;
     }
 
-    public String generateTruthTable() {
+    public String getTruthTable() {
         if(this.isFileLoaded){
-            String result = this.getFormText();
+            String result = "Truth table:\n" + this.getFormText();
             int n = this.iPins.size();
             int rows = (int) Math.pow(2,n);
             for (int i=0; i<rows; i++) {
@@ -54,8 +53,9 @@ public class LogicSimulator {
                     result += input + " ";
                 }
                 result += "| ";
-                for (Device oPin:this.oPins) {
-                    result += oPin.getOutput() + " ";
+                for (int count = 0; count < this.oPins.size(); count ++){
+                    result += this.oPins.get(count).getOutput();
+                    result += count == this.oPins.size() - 1 ? "" : " ";
                 }
                 result += "\n";
             }
@@ -66,7 +66,7 @@ public class LogicSimulator {
 
     private String getFormText() {
         int count = 0;
-        String result = new String("Simulation Result:\n");
+        String result = new String();
         for (count = 0; count < this.iPins.size(); count++)
         {
             result += "i ";
@@ -74,7 +74,8 @@ public class LogicSimulator {
         result += "| ";
         for (count = 0; count < this.oPins.size(); count++)
         {
-            result += "o ";
+            result += "o";
+            result += count == this.oPins.size() - 1 ? "" : " ";
         }
         result += '\n';
         for (count = 1; count <= this.iPins.size(); count++)
@@ -84,14 +85,15 @@ public class LogicSimulator {
         result += "| ";
         for (count = 1; count <= this.oPins.size(); count++)
         {
-            result += String.valueOf(count) + " ";
+            result += String.valueOf(count);
+            result += count == this.oPins.size() ? "" : " ";
         }
         result += "\n";
         for (count = 0; count < this.iPins.size(); count++)
         {
             result += "--";
         }
-        result += "+-";
+        result += "+";
         for (count = 0; count < this.oPins.size(); count++)
         {
             result += "--";
@@ -121,9 +123,6 @@ public class LogicSimulator {
                 //assume that the circuit are always legal
                 createCircuit(reader, gateCount);
                 this.isFileLoaded = true;
-                System.out.println("Circuit: " + this.iPins.size() +
-                                    " input pins, " + this.oPins.size() +
-                                    " output pins and " + this.circuit.size() + " gates");
                 reader.close();
                 return true;
             }
@@ -139,6 +138,12 @@ public class LogicSimulator {
             e.printStackTrace();
             return false;
         }
+    }
+
+    public String getCircuitInfomationText() {
+        return "Circuit: " + this.iPins.size() +
+                " input pins, " + this.oPins.size() +
+                " output pins and " + this.circuit.size() + " gates";
     }
 
     private void createCircuit(BufferedReader reader, int gateCount) throws IOException {

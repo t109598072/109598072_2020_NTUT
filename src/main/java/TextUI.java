@@ -27,17 +27,19 @@ public class TextUI {
         String input = scanner.next();
         // check if the input is valid
         // TODO: check if the input is out of the range of int
-        Commands inputCommand = Commands.values()[Integer.parseInt(input) - 1];
-        if (!this.isInputDigit(input) || Commands.EXIT.compareTo(inputCommand) < 0 || Commands.LOAD_LCF_FILE.compareTo(inputCommand) > 0)
+        int MAX_COUNT_OF_COMMAND = 4;
+        if (!this.isInputDigit(input) || Integer.parseInt(input) > MAX_COUNT_OF_COMMAND || Integer.parseInt(input) <= 0)
         {
             System.out.println("Please input the valid command!");
             return;
         }
-
+        Commands inputCommand = Commands.values()[Integer.parseInt(input) - 1];
         switch (inputCommand){
             case LOAD_LCF_FILE:{
                 System.out.print("Please key in a file path: ");
-                this.logicSimulator.load(scanner.next());
+                boolean isLoadSuccesful = this.logicSimulator.load(scanner.next());
+                if (isLoadSuccesful)
+                    System.out.println(this.logicSimulator.getCircuitInfomationText());
                 break;
             }
             case SIMULATTION:{
@@ -47,7 +49,7 @@ public class TextUI {
                 break;
             }
             case DISPLAY_TRUTH_TABLE:{
-                String result = this.logicSimulator.generateTruthTable();
+                String result = this.logicSimulator.getTruthTable();
                 System.out.println(result);
                 break;
             }
