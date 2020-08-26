@@ -23,16 +23,16 @@ public class LogicSimulator {
             this.iPins.get(i).setInput(input.get(i));
         }
         String result = "Simulation Result:\n" + (this.getFormText());
-        int num;
-        for (num = 0; num < this.iPins.size(); num++)
+
+        for (int i  = 0; i < this.iPins.size(); i++)
         {
-            result += this.iPins.get(num).getOutput() + " ";
+            result += this.iPins.get(i).getOutput() + " ";
         }
         result += "| ";
-        for (num = 0; num < this.oPins.size(); num++)
+        for (int i = 0; i < this.oPins.size(); i++)
         {
-            result += this.oPins.get(num).getOutput();
-            result += num == this.oPins.size() - 1 ? "" : " ";
+            result += this.oPins.get(i).getOutput();
+            result += i == this.oPins.size() - 1 ? "" : " ";
         }
         result += "\n";
         return result;
@@ -63,36 +63,35 @@ public class LogicSimulator {
     }
 
     private String getFormText() {
-        int count = 0;
         String result = new String();
-        for (count = 0; count < this.iPins.size(); count++)
+        for (int i = 0; i < this.iPins.size(); i++)
         {
             result += "i ";
         }
         result += "| ";
-        for (count = 0; count < this.oPins.size(); count++)
+        for (int i = 0; i < this.oPins.size(); i++)
         {
             result += "o";
-            result += count == this.oPins.size() - 1 ? "" : " ";
+            result += i == this.oPins.size() - 1 ? "" : " ";
         }
         result += '\n';
-        for (count = 1; count <= this.iPins.size(); count++)
+        for (int i = 1; i <= this.iPins.size(); i++)
         {
-            result += String.valueOf(count) + " ";
+            result += String.valueOf(i) + " ";
         }
         result += "| ";
-        for (count = 1; count <= this.oPins.size(); count++)
+        for (int i = 1; i <= this.oPins.size(); i++)
         {
-            result += String.valueOf(count);
-            result += count == this.oPins.size() ? "" : " ";
+            result += String.valueOf(i);
+            result += i == this.oPins.size() ? "" : " ";
         }
         result += "\n";
-        for (count = 0; count < this.iPins.size(); count++)
+        for (int i = 0; i < this.iPins.size(); i++)
         {
             result += "--";
         }
         result += "+";
-        for (count = 0; count < this.oPins.size(); count++)
+        for (int i = 0; i < this.oPins.size(); i++)
         {
             result += "--";
         }
@@ -100,28 +99,37 @@ public class LogicSimulator {
         return result;
     }
 
+    private int loadCircuitInformation(BufferedReader reader) throws IOException {
+        String line = reader.readLine();
+        if (this.isDigit(line))
+            return Integer.parseInt(line);
+        return -1;
+    }
+
+    private boolean isTheCountOfCircuitInformationCorrect(int inputPinsCount, int gateCount){
+        return inputPinsCount > 0 && inputPinsCount <= 16 && gateCount > 0 && gateCount <= 1000;
+    }
+
+    private void generateCircuit(int inputPinsCount, int gateCount, BufferedReader reader) throws IOException {
+        for (int i = 0; i < inputPinsCount; i++)
+            this.iPins.add(new IPin());
+        //assume that the circuit are always legal
+        createInstanceOfCircuit(reader, gateCount);
+        this.isFileLoaded = true;
+        reader.close();
+    }
+
     public boolean load(String lcfFilePath) {
         BufferedReader reader;
         int inputPinsCount = -1, gateCount = -1;
         try {
             reader = new BufferedReader(new FileReader(lcfFilePath));
-            //Get the count of input pins
-            String line = reader.readLine();
-            if (this.isDigit(line))
-                inputPinsCount = Integer.parseInt(line);
-            //Get the count of gates
-            line = reader.readLine();
-            if (this.isDigit(line))
-                gateCount = Integer.parseInt(line);
+            inputPinsCount = this.loadCircuitInformation(reader);
+            gateCount = this.loadCircuitInformation(reader);
 
-            if (inputPinsCount > 0 && inputPinsCount <= 16 && gateCount > 0 && gateCount <= 1000)
+            if (this.isTheCountOfCircuitInformationCorrect(inputPinsCount, gateCount))
             {
-                for (int i = 0; i < inputPinsCount; i++)
-                    this.iPins.add(new IPin());
-                //assume that the circuit are always legal
-                createCircuit(reader, gateCount);
-                this.isFileLoaded = true;
-                reader.close();
+                this.generateCircuit(inputPinsCount, gateCount, reader);
                 return true;
             }
             else
@@ -130,9 +138,11 @@ public class LogicSimulator {
                 return false;
             }
         } catch (FileNotFoundException e) {
+            System.out.println("File is not founded, pleaser check your file is exist.");
             e.printStackTrace();
             return false;
         } catch (IOException e) {
+            System.out.println("IO exception occurred, please trace the stack.");
             e.printStackTrace();
             return false;
         }
@@ -144,7 +154,7 @@ public class LogicSimulator {
                 " output pins and " + this.circuit.size() + " gates";
     }
 
-    private void createCircuit(BufferedReader reader, int gateCount) throws IOException {
+    private void createInstanceOfCircuit(BufferedReader reader, int gateCount) throws IOException {
         Vector<String> lines = new Vector<String>();
         String line;
         //createGate
